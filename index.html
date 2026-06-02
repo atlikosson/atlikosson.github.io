@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atli Kosson</title>
+  <meta name="description" content="Atli Kosson — machine learning researcher. PhD in Computer Science from EPFL, advised by Prof. Martin Jaggi. Optimization and training dynamics of large neural networks.">
+
+  <meta property="og:title" content="Atli Kosson">
+  <meta property="og:description" content="Machine learning researcher. PhD from EPFL. Optimization and training dynamics of large neural networks.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.kosson.is/">
+  <meta property="og:image" content="https://www.kosson.is/assets/img/atli_kosson.jpg">
+
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --muted: #555;
+      --accent: #8a1f1f;       /* restrained academic dark red */
+      --rule: #e6e6e6;
+      --bg: #ffffff;
+      --maxw: 760px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 56px 24px 96px;
+    }
+
+    /* ---- Header ---- */
+    h1 {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: 600;
+      font-size: 2.7rem;
+      letter-spacing: 0.01em;
+      margin: 0 0 4px;
+    }
+    h1 .first { font-weight: 700; }
+
+    .role {
+      color: var(--muted);
+      font-size: 1.02rem;
+      margin: 0 0 16px;
+    }
+
+    .icons {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .icons a {
+      color: var(--ink);
+      display: inline-flex;
+      transition: color .15s ease, transform .15s ease;
+    }
+    .icons a:hover { color: var(--accent); transform: translateY(-1px); }
+    .icons svg { width: 22px; height: 22px; display: block; }
+
+    /* ---- Intro: text + photo ---- */
+    .intro {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+      margin-top: 28px;
+    }
+    .intro .text { flex: 1 1 auto; min-width: 0; }
+    .intro figure {
+      flex: 0 0 200px;
+      margin: 6px 0 0;
+    }
+    .intro img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.16);
+      display: block;
+    }
+    .intro figcaption {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    /* ---- Sections ---- */
+    section { margin-top: 40px; }
+    h2 {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--ink);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 6px;
+      margin: 0 0 16px;
+    }
+
+    p { margin: 0 0 16px; }
+    p:last-child { margin-bottom: 0; }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    ul.interests {
+      margin: 0;
+      padding-left: 1.2em;
+    }
+    ul.interests li { margin-bottom: 8px; }
+
+    .prev {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 64px;
+      padding-top: 16px;
+      border-top: 1px solid var(--rule);
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 620px) {
+      h1 { font-size: 2.1rem; }
+      body { font-size: 17px; }
+      .intro { flex-direction: column-reverse; gap: 20px; }
+      .intro figure { flex-basis: auto; align-self: center; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #e9e9e9;
+        --muted: #a6a6a6;
+        --accent: #e08a8a;
+        --rule: #333;
+        --bg: #121212;
+      }
+      .intro img { box-shadow: 0 4px 16px rgba(0,0,0,0.5); }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <h1><span class="first">Atli</span> Kosson</h1>
+      <p class="role">Machine Learning Researcher &middot; PhD, EPFL</p>
+
+      <nav class="icons" aria-label="Profiles">
+        <a href="mailto:atli@kosson.is" title="Email" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg>
+        </a>
+        <a href="https://scholar.google.com/citations?user=nDJL0AoAAAAJ" title="Google Scholar" aria-label="Google Scholar" rel="noopener" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 1 8l11 6 9-4.9V17h2V8L12 2zM5 13.2V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.8l-7 3.8-7-3.8z"/></svg>
+        </a>
+        <a href="https://github.com/atlikosson" title="GitHub" aria-label="GitHub" rel="noopener" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.8c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/atli-kosson" title="LinkedIn" aria-label="LinkedIn" rel="noopener" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9z"/></svg>
+        </a>
+        <a href="https://x.com/AtliKosson" title="X" aria-label="X" rel="noopener" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.2 2H21l-6.5 7.4L22 22h-6l-4.7-6.2L5.9 22H3l7-8L2 2h6.2l4.2 5.6L18.2 2zm-2.1 18h1.7L7.9 3.8H6.1L16.1 20z"/></svg>
+        </a>
+      </nav>
+    </header>
+
+    <div class="intro">
+      <div class="text">
+        <p>
+          I am a machine learning researcher working on the optimization and training
+          dynamics of large neural networks. I recently completed my PhD in Computer
+          Science at <strong>EPFL</strong>, advised by <strong>Prof. Martin Jaggi</strong>,
+          with a thesis on the training dynamics of large language model pre-training &mdash;
+          examining how weight decay, learning-rate warmup and schedules, and hyperparameter
+          transfer shape optimization at scale.
+        </p>
+        <p>
+          Before my doctorate I worked on large-scale neural network training as an
+          Autopilot Software Engineer at <strong>Tesla</strong> and as a Machine Learning
+          Research Engineer at <strong>Cerebras Systems</strong>, and most recently as an
+          Applied Scientist intern at <strong>Amazon</strong>. I hold an MS in Electrical
+          Engineering from <strong>Stanford University</strong> and a BS from the
+          <strong>University of Iceland</strong>, where I grew up.
+        </p>
+
+      </div>
+
+      <figure>
+        <img src="assets/img/atli_kosson.jpg" alt="Atli Kosson">
+      </figure>
+    </div>
+
+    <section>
+      <h2>Research Interests</h2>
+      <p>
+        I aim to improve our understanding of how and why modern deep learning works, with a
+        focus on optimization. I lean toward a top-down, empirical style &mdash; large-scale
+        experimentation and applied analysis rather than purely bottom-up theory. Recurring
+        themes in my work include:
+      </p>
+      <ul class="interests">
+        <li>Optimization and training dynamics of large neural networks</li>
+        <li>Large language model pre-training</li>
+        <li>Weight decay, learning-rate warmup, and learning-rate schedules</li>
+        <li>Hyperparameter transfer and scaling (&micro;P)</li>
+        <li>Hardware-efficient architectures and training</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Publications</h2>
+      <p>
+        My work has appeared at ICLR, NeurIPS, ICML, AAAI, MLSys, and TMLR. A full,
+        up-to-date list is available on my
+        <a href="https://scholar.google.com/citations?user=nDJL0AoAAAAJ" rel="noopener" target="_blank">Google Scholar</a> profile.
+      </p>
+    </section>
+
+    <footer>
+      &copy; Atli Kosson &middot; <a href="mailto:atli@kosson.is">atli@kosson.is</a>
+    </footer>
+
+  </div>
+</body>
+</html>
